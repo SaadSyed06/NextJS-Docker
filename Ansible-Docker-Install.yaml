@@ -5,7 +5,7 @@
     container_count: 4
     default_container_name: docker
     default_container_image: ubuntu
-    default_container_command: sleep 10m
+    #default_container_command: sleep 10m
 
   tasks:
     - name: Install aptitude
@@ -56,6 +56,6 @@
       community.docker.docker_container:
         name: "{{ default_container_name }}{{ item }}"
         image: "{{ default_container_image }}"
-        command: "{{ default_container_command }}"
+        #command: "{{ default_container_command }}"
         state: present
       with_sequence: count={{ container_count }}
