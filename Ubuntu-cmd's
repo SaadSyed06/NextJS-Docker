@@ -1,0 +1,37 @@
+    1  sudo apt install nginx certbot python3-certbot-nginx
+    2  sudo ufw allow "Nginx Full"
+    3  ufw allow OpenSSH
+    4  ufw enable
+    5  apt install npm
+    6  npm install -g pm2
+    7  pm2 status
+    8  cd /var/www
+    9  ls
+    10  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    11  exec $SHELL
+    12  nvm install --lts
+    13  npx create-next-app@latest saad
+    14  ls
+    15  cd saad/
+    16  ls
+    17  npm run build
+    18  cd /etc/nginx/sites-available
+    19  ls
+    20  touch saad
+    21  ls
+    22  nano saad
+    23  nano /etc/nginx/nginx.conf
+    24  nginx -t
+    25  cd /etc/nginx/sites-available
+    26  rm default
+    27  ls
+    28  cd /etc/nginx/sites-enabled
+    29  ls
+    30  rm default
+    31  ls
+    32  systemctl restart nginx
+    33  cd /var/www/name_of_app
+    34  cd /var/www/saad
+    35  pm2 start npm --name saad -- start
+    36  sudo certbot --nginx -d saad.com
+    37  systemctl restart nginx
