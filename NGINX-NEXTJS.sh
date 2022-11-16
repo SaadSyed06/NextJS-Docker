@@ -1,6 +1,3 @@
-#Setup NextJS on Digital Ocean Ubuntu server Terminal Commands
-#based on my YouTube video
-
 #login to server
 ssh root@ip_address
 
